@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.container {
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: auto;
+}
+.left {
+    width: 50%;
+    /* float: left; */
+}
+.left h1 {
+    margin: 0;
+    font-weight: bolder;
+}
+.left p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+.right span.try {
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px 40px;
+    border-radius: 10px;
+    width: 430px;
+    display: block;
+    font-weight: 400;
+    box-shadow: 2px 5px hsl(249, 10%, 26%);
+}
+.right form {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    margin-top: 20px;
+}
+form .f-control {
+    position: relative;
+}
+.right form .f-control.success .icon {visibility: hidden}
+.right form .f-control.error .icon,
+.right form .f-control.error small {visibility: visible}
+
+.right form input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.right form .f-control.error input {border: 2px solid hsl(0, 100%, 74%)}
+.right form button.submit {
+    background-color: hsl(154, 59%, 51%);
+    display: block;
+    border: none;
+    width: 360px;
+    padding: 15px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px hsl(249, 10%, 26%);
+}
+.right form button.submit:hover {opacity: .8;}
+.right span.terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    text-align: center;
+    display: block;
+}
+.right span.terms a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 500;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    visibility: hidden;
+}
+small {
+    color: hsl(0, 100%, 77%);
+    font-size: 11px;
+    position: absolute;
+    top: 48px;
+    right: 5px;
+    visibility: hidden;
+}

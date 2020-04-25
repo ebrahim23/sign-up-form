@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Learn to code by <br>watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="right">
+      <span class="try">Try it free 7 days then $20/mo. thereafter</span>
+      <form id="form">
+        <div class="f-control">
+          <input type="text" id="fName" placeholder="First Name">
+          <img class="icon" src="images/icon-error.svg" alt="error icon">
+          <small>First Name cannot be empty</small>
+        </div>
+        <div class="f-control">
+          <input type="text" id="lName" placeholder="Last Name">
+          <img class="icon" src="images/icon-error.svg" alt="error icon">
+          <small>Last Name cannot be empty</small>
+        </div>
+        <div class="f-control">
+          <input type="email" id="email" placeholder="Email Address">
+          <img class="icon" src="images/icon-error.svg" alt="error icon">
+          <small>Looks like this is not an email</small>
+        </div>
+        <div class="f-control">
+          <input type="password" id="password" placeholder="Password">
+          <img class="icon" src="images/icon-error.svg" alt="error icon">
+          <small>Password cannot be empty</small>
+        </div>
+          <button class="submit">Claim your free trial</button>
+          <span class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span>
+        
+      </form>
+    </div>
+  </div>
+</body>
+</html>
